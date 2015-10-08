@@ -19,7 +19,7 @@ public class WaytolongWords {
 			
 			String dato = "";
 
-			if (palabra.length() >= 10) {
+			if (palabra.length() > 10) {
 
 				int letras = palabra.length() - 2;
 

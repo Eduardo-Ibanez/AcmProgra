@@ -6,15 +6,15 @@ public class TheatreSquare {
 	
 	public static void main(String[] args) {
 		
-		int n=0;
-		int x=0;
-		int y=0;
+		long n=0;
+		long x=0;
+		long y=0;
 	
 	Scanner entrada =new Scanner(System.in);
 	
-	int ancho= entrada.nextInt();
-	int largo= entrada.nextInt();
-	int placa=entrada.nextInt();
+	long ancho= entrada.nextInt();
+	long largo= entrada.nextInt();
+	long placa=entrada.nextInt();
 	
 	
 	x=ancho/placa;

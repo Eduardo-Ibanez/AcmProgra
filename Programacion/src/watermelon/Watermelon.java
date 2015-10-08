@@ -19,7 +19,7 @@ public class Watermelon {
 		if (resto == 0) {
 			salida = "YES";
 		}
-
+		
 		System.out.println(salida);
 		
 

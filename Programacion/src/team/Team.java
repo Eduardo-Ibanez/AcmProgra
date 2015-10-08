@@ -2,8 +2,6 @@ package team;
 
 import java.util.Scanner;
 
-import watermelon.FileManager;
-
 public class Team {
 
 	public static void main(String[] args) {
@@ -14,7 +12,7 @@ public class Team {
 		Scanner entrada = new Scanner(System.in);
 		int input = entrada.nextInt();
 
-		for (int i = 1; i < (input * 3)+1; i++) {
+		for (int i = 1; i < ((input * 3)+1); i++) {
 
 			suma += entrada.nextInt();
 			if (i % 3 == 0) {
