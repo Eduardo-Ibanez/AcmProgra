@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Watermelon {
 	public static void main(String[] args) {
+		
+		//CODIGO APROBADO EN CODEFORCES;	
 
 	int resto;
 	String salida = "";
@@ -12,11 +14,15 @@ public class Watermelon {
 		int input=entrada.nextInt();
 
 		resto = (input % 2);
+		
+		
 
 		if (resto == 1) {
 			salida = "NO";
+		}else if(input==2){
+			salida="NO";
 		}
-		if (resto == 0) {
+		else {
 			salida = "YES";
 		}
 		

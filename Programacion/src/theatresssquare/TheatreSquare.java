@@ -6,6 +6,8 @@ public class TheatreSquare {
 	
 	public static void main(String[] args) {
 		
+		//CODIGO APROBADO EN CODEFORCES
+		
 		long n=0;
 		long x=0;
 		long y=0;

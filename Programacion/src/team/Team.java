@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class Team {
 
 	public static void main(String[] args) {
+		
+		//CODIGO APROBADO EN CODEFORCES
 
 		int cont = 0;
 		int suma = 0;
@@ -12,19 +14,18 @@ public class Team {
 		Scanner entrada = new Scanner(System.in);
 		int input = entrada.nextInt();
 
-		for (int i = 1; i < ((input * 3)+1); i++) {
+		for (int i = 0; i < input; i++) {
+			int a=entrada.nextInt();
+			int b=entrada.nextInt();
+			int c=entrada.nextInt();
 
-			suma += entrada.nextInt();
-			if (i % 3 == 0) {
-				if (suma > 1) {
-					cont++;
-					suma=0;
-				}
-
-			}
-
+			suma = a+b+c;
+			if (suma>1) {
+				cont++;
+					}
 		}
 		System.out.println(cont);
 
 	}
 }
+

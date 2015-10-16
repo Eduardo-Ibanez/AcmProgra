@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class DominoPiling {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		//CODIGO APROBADO EN CODEFORCES
 		
 		Scanner entrada=new Scanner(System.in);
 		

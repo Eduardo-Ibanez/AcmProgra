@@ -5,14 +5,13 @@ import java.util.Scanner;
 public class WaytolongWords {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		// CODIGO APROBADO EN CODEFORCES
 
 		Scanner entrada = new Scanner(System.in);
-
 		int numpalabras = entrada.nextInt();
 
 		String palabras[] = new String[numpalabras];
-
 		for (int i = 0; i < numpalabras; i++) {
 
 			String palabra = entrada.next();
