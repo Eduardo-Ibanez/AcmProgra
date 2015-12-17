@@ -1,58 +1,45 @@
 package victorsresearch;
 
+import java.util.HashMap;
 import java.util.Scanner;
-
-import watermelon.FileManager;
 
 public class VictorsResearch {
 
+	
+
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		int i;
-		int cont=0;
 		
 		
+		Scanner entrada = new Scanner(System.in);
+		int victor=entrada.nextInt();
+		int ayudante=entrada.nextInt();
+		int cont=0; int temp=0;int sumatoria=0;
 		
-		Scanner entrada =new Scanner(System.in);
+		HashMap<Integer, Integer> consultar = new HashMap<Integer,Integer>();
+
+		for(int i=1;i<=victor;i++){
+			
+			temp=entrada.nextInt();
+			sumatoria+=temp;
 		
-		int cientifico= entrada.nextInt();
-		int ayudante= entrada.nextInt();
-		int numeros[]= new int [cientifico];
+			Integer valorbuscar = sumatoria - ayudante;
+			Integer valorFrecuencia = consultar.get(valorbuscar);
+			if(valorFrecuencia!=null){
+				cont = cont + valorFrecuencia;
+			}
+			Integer frecuencia = consultar.get(sumatoria);
+			if(frecuencia==null)
+				frecuencia=1;
+			else
+				frecuencia++;
 		
-	for(i=1;i<cientifico;i++){
-		int entradas=entrada.nextInt();
-		numeros[i]=entradas;	
-		
-		if(numeros[i]==ayudante){
-			cont++;
-		}
-			if(numeros[i]==ayudante){
+			consultar.put(sumatoria, frecuencia);
+			
+			if(sumatoria==ayudante){
 				cont++;
 			}
-			for(int j=1;j<=i;j++){
-				numeros[i-j]+=numeros[i];
-				if(numeros[i-j]==ayudante){
-					cont++;
-					
-				}
-			}
 		}
-	
-	System.out.println(cont);
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		System.out.println(cont);
 	}
 
 }
